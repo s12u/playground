@@ -138,16 +138,12 @@
 			isa = PBXGroup;
 			children = (
 				90B1CB9B23A0A23800B97647 /* AppDelegate.swift */,
-				90B1CB9F23A0A23800B97647 /* MainViewController.swift */,
 				90B1CBA423A0A23A00B97647 /* Assets.xcassets */,
 				90B1CBA623A0A23A00B97647 /* LaunchScreen.storyboard */,
 				90B1CBA923A0A23A00B97647 /* Info.plist */,
-				90B1CBCB23A1FE1900B97647 /* ListViewController.swift */,
-				90B1CBCD23A2036D00B97647 /* TableViewCell.swift */,
-				90B1CBCF23A203F800B97647 /* ListViewModel.swift */,
-				90B1CBD123A2043F00B97647 /* TableViewData.swift */,
-				90B1CBD323A2048100B97647 /* DataModel.swift */,
-				90B1CBD523A224D000B97647 /* MainCoordinator.swift */,
+				90BAE5B223A2838E00CF9336 /* Coordinators */,
+				90BAE5B023A2835D00CF9336 /* Scenes */,
+				90BAE5AF23A2832E00CF9336 /* Data */,
 			);
 			path = playground;
 			sourceTree = "<group>";
@@ -168,6 +164,66 @@
 				90B1CBBF23A0A23A00B97647 /* Info.plist */,
 			);
 			path = playgroundUITests;
+			sourceTree = "<group>";
+		};
+		90BAE5AD23A2823B00CF9336 /* ListScene */ = {
+			isa = PBXGroup;
+			children = (
+				90B1CBCF23A203F800B97647 /* ListViewModel.swift */,
+				90B1CBCB23A1FE1900B97647 /* ListViewController.swift */,
+				90BAE5AE23A282B400CF9336 /* Cell */,
+			);
+			path = ListScene;
+			sourceTree = "<group>";
+		};
+		90BAE5AE23A282B400CF9336 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				90B1CBCD23A2036D00B97647 /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		90BAE5AF23A2832E00CF9336 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				90B1CBD323A2048100B97647 /* DataModel.swift */,
+				90BAE5B123A2837C00CF9336 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		90BAE5B023A2835D00CF9336 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				90BAE5B323A283F700CF9336 /* Main */,
+				90BAE5AD23A2823B00CF9336 /* ListScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		90BAE5B123A2837C00CF9336 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90B1CBD123A2043F00B97647 /* TableViewData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90BAE5B223A2838E00CF9336 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				90B1CBD523A224D000B97647 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		90BAE5B323A283F700CF9336 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				90B1CB9F23A0A23800B97647 /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		AC3958FDA5A26361FFFD97BC /* Frameworks */ = {
@@ -722,7 +778,7 @@
 				90B1CBC123A0A23A00B97647 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		90B1CBC223A0A23A00B97647 /* Build configuration list for PBXNativeTarget "playground" */ = {
 			isa = XCConfigurationList;
@@ -731,7 +787,7 @@
 				90B1CBC423A0A23A00B97647 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		90B1CBC523A0A23A00B97647 /* Build configuration list for PBXNativeTarget "playgroundTests" */ = {
 			isa = XCConfigurationList;
@@ -740,7 +796,7 @@
 				90B1CBC723A0A23A00B97647 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		90B1CBC823A0A23A00B97647 /* Build configuration list for PBXNativeTarget "playgroundUITests" */ = {
 			isa = XCConfigurationList;
@@ -749,7 +805,7 @@
 				90B1CBCA23A0A23A00B97647 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,12 +11,13 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    let window: UIWindow! = UIWindow()
+    var rootWindow: UIWindow!
     let router = MainCoordinator().strongRouter
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        router.setRoot(for: window)
+        rootWindow = UIWindow()
+        router.setRoot(for: rootWindow)
         return true
     }
 
